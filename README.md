@@ -90,6 +90,16 @@ const result = await MyModel.bulkUpsertReplaceOne(items, matchFields);
 console.log(result.nUpserted + result.nModified, 'items processed');
 ```
 
+There is a way to avoid manually declaring the match fields before an operation.
+We can set in the schema the fields that, by default, will be used as match fields:
+```js
+const MySchema = new Schema({
+  // fields of schema
+}, {
+  defaultBulkMatchFields: ['field1', 'field2']
+});
+```
+
 ## Credits
 
 * Original project was created by [Adam Reis](https://adam.reis.nz)

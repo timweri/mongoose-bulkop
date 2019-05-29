@@ -1,7 +1,7 @@
 {
   "name": "mongoose-bulkop",
   "description": "A plugin that adds bulk operations to Mongoose schemas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/timweri/mongoose-bulkop",
   "author": {
     "name": "Duc Thanh Nguyen",

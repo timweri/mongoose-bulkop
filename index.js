@@ -8,7 +8,7 @@ const matchCriteria = require('./helpers/match-criteria');
 
 const getMatchFields = function (schema, matchFields) {
   // Use default match fields if none provided
-  matchFields = matchFields || schema.options.upsertMatchFields;
+  matchFields = matchFields || schema.options.defaultBulkMatchFields;
   if (!Array.isArray(matchFields) || matchFields.length === 0) {
     matchFields = ['_id'];
   }
